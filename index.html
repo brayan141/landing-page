@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locale Peek - Versión Estática</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/logo.jpg" alt="Logo" class="logo">
+        <h2>MARCAS COCTELES CLARO</h2>
+    </header>
+
+    <main>
+
+        <section class="carousel-container">
+            <div class="carousel">
+                <div class="slide active"><img src="assets/carousel-1.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="assets/carousel-2.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="assets/carousel-3.jpg" alt="Slide 3"></div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="cities">
+            <h2>Ciudades relacionadas</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem magni, sed a tenetur aliquid est perferendis omnis temporibus totam consectetur numquam necessitatibus delectus culpa ad dignissimos minus nam. Veritatis, commodi?</p>
+            <div class="grid">
+                <a href="#" class="card-link"><div class="card" data-city="Barranquilla"><img src="assets/city-thumb.jpg"><h3>Barranquilla</h3></div></a>
+                <a href="#" class="card-link"><div class="card" data-city="Bogota"><img src="assets/city-thumb.jpg"><h3>Bogotá</h3></div></a>
+                <a href="#" class="card-link"><div class="card" data-city="Cali"><img src="assets/city-thumb.jpg"><h3>Cali</h3></div></a>
+                <a href="#" class="card-link"><div class="card" data-city="Medellin"><img src="assets/city-thumb.jpg"><h3>Medellín</h3></div></a>
+                <a href="#" class="card-link"><div class="card" data-city="Pereira"><img src="assets/city-thumb.jpg"><h3>Pereira</h3></div></a>
+                <a href="#" class="card-link"><div class="card" data-city="Bucaramanga"><img src="assets/city-thumb.jpg"><h3>Bucaramanga</h3></div></a>
+                <a href="#" class="card-link"><div class="card" data-city="Cartagena"><img src="assets/city-thumb.jpg"><h3>Cartagena</h3></div></a>
+            </div>
+        </section>
+    </main>
+
+    <div id="city-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-city-name"></h2>
+            <div id="modal-images" class="modal-images-grid">
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="scroll-to-top-button" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+    </a>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/logo.jpg" alt="Logo">
+                    </div>
+                    <div class="footer-company-info">
+                        <h3 class="footer-company-name">MARCAS COCTELES CLARO</h3>
+                        <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi.</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4 class="social-title">REDES SOCIALES</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                Copyright 2025. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/scroll-to-top.js"></script>
+</body>
+</html>

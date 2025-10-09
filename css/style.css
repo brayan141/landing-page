@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #5f6061;
+    color: #1e293b;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #333;
+    backdrop-filter: blur(10px);
+    top: 0;
+}
+
+.logo {
+    height: 60px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    color: #1e293b;
+    margin: 0;
+}
+
+.header h2 {
+    color: #fefefe;
+}
+
+.cities {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.cities h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #fefefe;
+}
+
+.cities p {
+    color: #fefefe;
+    text-align: center;
+    max-width: 70vw;
+    margin: 0 auto
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(231, 231, 231, 0.3);
+    transition: transform 0.3s;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 700px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-city-name {
+    text-align: center;
+}
+
+.modal-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-images-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* New Footer Styles */
+.site-footer {
+    background-color: #333;
+    color: #f2f2f2;
+    padding: 2rem 0;
+}
+
+.site-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer-about {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.footer-logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.footer-company-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 0.875rem;
+    max-width: 400px;
+    margin-top: 0.5rem;
+    color: #ccc;
+    text-align: justify;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-social {
+        text-align: right;
+    }
+}
+
+.social-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .social-links {
+        justify-content: flex-end;
+    }
+}
+
+.social-link {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.social-link.linkedin {
+    background-color: #0077b5;
+}
+
+.social-link.facebook {
+    background-color: #0084ff;
+}
+
+.social-link.youtube {
+    background-color: #ff0000;
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+.footer-copyright {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #aaa;
+}
+
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c1121f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 100;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #9a0e19;
+}
